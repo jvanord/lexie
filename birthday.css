@@ -1,23 +1,56 @@
+html {
+    margin: 0;
+    padding: 0;
+}
 body {
     background: linear-gradient(to bottom right,#fcc,#cff);
     color: rgba(0, 0, 0, 0.65);
     font-family: Verdana, Geneva, Tahoma, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 h1, h2 { font-weight: normal; text-align: center; text-transform: uppercase; }
 h1 { font-size: 2.5em; }
 h2 { font-size: 2em; }
+h2.lexie { font-size: 7.75em; }
 
 #card { 
     display: none; 
-    max-width: initial;
-    margin: 3em;
+    max-width: 500px;
+    margin: 3em auto;
 }
 
 #timer { 
     display: none; 
 }
 
+.fcc { color: #fcc; text-shadow: 3px 3px 5px #c00; }
+.cfc { color: #cfc; text-shadow: 3px 3px 5px #0c0; }
+.ccf { color: #ccf; text-shadow: 3px 3px 5px #00c; }
+.cff { color: #cff; text-shadow: 3px 3px 5px #0cc; }
+.age {
+    font-family: Impact, Arial, Helvetica, sans-serif;
+    font-size: 20em;
+    text-align: center;
+    font-weight: bold;
+}
+.dad {
+    text-align: right;
+    font-style: italic;
+}
+
+.animated_rainbow_1 {
+    background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    animation: animatedBackground_a 5s linear infinite alternate;
+    -webkit-animation: animatedBackground_a 5s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    background-clip: text;
+}
+
+@keyframes animatedBackground_a {
+    0% { background-position: 0 0 }
+    100% { background-position: -500px 0 }
+}
