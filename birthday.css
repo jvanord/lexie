@@ -26,6 +26,15 @@ h2.lexie { font-size: 7.75em; }
     display: none; 
 }
 
+#emitter {
+    background-color: transparent;
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
 .fcc { color: #fcc; text-shadow: 3px 3px 5px #c00; }
 .cfc { color: #cfc; text-shadow: 3px 3px 5px #0c0; }
 .ccf { color: #ccf; text-shadow: 3px 3px 5px #00c; }
